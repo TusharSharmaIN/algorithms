@@ -22,6 +22,8 @@ int main()
 	
 	bubbleSort(ptrArray, size);
 	
+//	quickSort(ptrArray, 0, size - 1);
+	
 	getArray(ptrArray, size);	
 		
 	return 0;				
