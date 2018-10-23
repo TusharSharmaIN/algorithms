@@ -4,3 +4,4 @@
 #include "Insertion_Sort.c"
 #include "Selection_Sort.c"
 #include "Quick_Sort.c"
+#include "Counting_Sort.c"
