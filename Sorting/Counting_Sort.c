@@ -2,8 +2,8 @@
 
 int getMax(int arr[], int size)
 {
-    int i, max = arr[1];
-    for(i = 1; i <= size; i++)
+    int i, max = arr[0];
+    for(i = 0; i < size; i++)
         if( max < arr[i] )
             max = arr[i];
 
@@ -18,27 +18,28 @@ void countingSort(int arr[], int newArr[], int size)
 {
     int key = getMax(arr, size);
     
-    int countArr[key + 1];
+    int countArr[key+1];
     int i, j;
     
-    for(i = 0; i < key; i++)
+    for(i = 0; i <= key; i++)
     {
         countArr[i] = 0;
     }
     
-    for(j = 1; j <= size; j++)
+    for(j = 0; j < size; j++)
     {
         countArr[arr[j]] = countArr[arr[j]] + 1;
     }
-    
+
     for(i = 1; i <= key; i++)
     {
-        countArr[i] = countArr[i] + countArr[i-1];
+            countArr[i] = countArr[i] + countArr[i-1];
     }
-    
-    for(j = size; j > 0; j--)
+
+    for(j = size-1; j >= 0; j--)
     {
-        newArr[countArr[arr[j]]] = arr[j];
+        newArr[countArr[arr[j]] - 1] = arr[j];
         countArr[arr[j]] = countArr[arr[j]] - 1;
     }
 }
+
