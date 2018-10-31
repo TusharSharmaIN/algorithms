@@ -16,28 +16,28 @@ void merge(int arr[], int p, int q, int r)
 	i = j = 0;
 	k = p;
 	
-    while (i < n1 && j < n2) 
-    { 
-        if (leftArr[i] <= rightArr[j]) 
-        { 
-            arr[k] = leftArr[i++];
-        } 
-        else
-        { 
-            arr[k] = rightArr[j++];
-        } 
-        k++; 
-    } 
+	while (i < n1 && j < n2) 
+	{ 
+		if (leftArr[i] <= rightArr[j]) 
+		{ 
+		    arr[k] = leftArr[i++];
+		} 
+		else
+		{ 
+		    arr[k] = rightArr[j++];
+		} 
+		k++; 
+	} 
 
-    while (i < n1) 
-    { 
-        arr[k++] = leftArr[i++];
-    } 
+    	while (i < n1) 
+    	{ 
+        	arr[k++] = leftArr[i++];
+    	} 
 
-    while (j < n2) 
-    { 
-        arr[k++] = rightArr[j++];
-    }
+    	while (j < n2) 
+    	{ 
+        	arr[k++] = rightArr[j++];
+    	}
 }
 
 //  mrgeSort(arr, 0, size);
