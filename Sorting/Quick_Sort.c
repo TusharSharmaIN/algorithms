@@ -1,6 +1,6 @@
 
 /*	use while calling in main
- *	quickSort(ptrArray, 0, size-1);
+ *	quickSort(ptrArray, 0, size);
  *	size is size of array
  */
 
