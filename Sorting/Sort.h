@@ -6,3 +6,4 @@
 #include "Quick_Sort.c"
 #include "Counting_Sort.c"
 #include "Heap_Sort.c"
+#include "Merge_Sort.c"
