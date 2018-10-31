@@ -15,14 +15,24 @@ int main()
 	printf("Enter size for Array : ");
 	scanf("%d", &size);
 	int *ptrArray = (int *) malloc(size * sizeof (int));		//dynamically allocating array
-	
+	int *newArray = (int *) malloc(size * sizeof (int));
 	printf("\nEnter Array : ");
 	
 	setArray(ptrArray, size);
 	
-	bubbleSort(ptrArray, size);
+//	bubbleSort(ptrArray, size);
 	
-//	quickSort(ptrArray, 0, size - 1);
+//	insertionSort(ptrArray, size);
+
+//	selectionSort(ptrArray, size);
+	
+//	quickSort(ptrArray, 0, size);
+	
+//	counting(ptrArray, newArray, size);
+	
+//	heapSort(ptrArray, size);
+	
+//	mergeSort(ptrArray, 0, size);
 	
 	getArray(ptrArray, size);	
 		
