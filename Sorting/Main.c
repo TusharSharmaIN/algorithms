@@ -32,7 +32,7 @@ int main()
 	
 //	heapSort(ptrArray, size);
 	
-//	mergeSort(ptrArray, 0, size);
+//	mergeSort(ptrArray, 0, size-1);
 	
 	getArray(ptrArray, size);	
 		
