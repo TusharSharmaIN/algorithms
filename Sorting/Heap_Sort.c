@@ -1,4 +1,10 @@
-
+/*
+ *	function to make heap of an array
+ *	@param arr[] array to make heap from
+ *	@param size size of array passed
+ *	@param i
+ *	@return void
+ */
 void heapify(int arr[], int size, int i)
 {	
 	int largest = i; 
@@ -19,6 +25,11 @@ void heapify(int arr[], int size, int i)
 	}
 }
 
+/*	function to build max heap
+ *	@param arr[] array to buil max heap from
+ *	@param size size of aray
+ *	@return void
+ */
 void maxHeapify(int arr[], int size)
 {
 	int i = 0;
@@ -29,6 +40,11 @@ void maxHeapify(int arr[], int size)
 	}
 }
 
+/*	function to sort an array using heap sort algorithm
+ *	@param arr[] array to buil max heap from
+ *	@param size size of aray
+ *	@return void
+ */
 void heapSort(int arr[], int size)
 {
 	int i;
