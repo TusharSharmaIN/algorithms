@@ -1,18 +1,9 @@
-
-
-int getMax(int arr[], int size)
-{
-    int i, max = arr[0];
-    for(i = 0; i < size; i++)
-        if( max < arr[i] )
-            max = arr[i];
-
-    return max;
-}
-
 /*
- *	countingSort(A,B,size)
- *	A is transmiting matrix and B is the recieving matrix
+ *	function to sort an array using counting sort algorithm
+ *	@param arr[] array to be sorted
+ *	@param newArr[] new array that is sorted from the passed array
+ *	@param size size of array passed
+ *	@return void
  */
 void countingSort(int arr[], int newArr[], int size)
 {
@@ -42,4 +33,3 @@ void countingSort(int arr[], int newArr[], int size)
         countArr[arr[j]] = countArr[arr[j]] - 1;
     }
 }
-
