@@ -1,23 +1,25 @@
-/*	Program for bubble sort and array	*/
-/*	File inclusion	*/
 #include<stdio.h>
 #include <stdlib.h>
 
 #include "Misc.c"
 #include "Sort.h"
 
-//driver function
+/*
+ *	driver method to test all the sorting algorithms included in the sort header
+ *	@param null
+ *	@return void
+ */
 int main()
 {
 	int size;
 	
-	//letting user enter size
-	printf("Enter size for Array : ");
+	printf("Enter size for Array: ");
 	scanf("%d", &size);
-	int *ptrArray = (int *) malloc(size * sizeof (int));		//dynamically allocating array
-	int *newArray = (int *) malloc(size * sizeof (int));
-	printf("\nEnter Array : ");
 	
+	int *ptrArray = (int *) malloc(size * sizeof (int));
+	int *newArray = (int *) malloc(size * sizeof (int));
+	
+	printf("\nEnter Array: ");
 	setArray(ptrArray, size);
 	
 //	bubbleSort(ptrArray, size);
@@ -38,4 +40,3 @@ int main()
 		
 	return 0;				
 }
-/*	Code ends here	*/
