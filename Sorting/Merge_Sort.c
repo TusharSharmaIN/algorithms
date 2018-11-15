@@ -1,3 +1,11 @@
+/*
+ *	merge function to merge two sub arrays
+ *	@param arr[] to be merged into
+ *	@param p first index of subarray
+ *	@param q middle index of subarray
+ *	@param r last index of subarray
+ *	@return void
+ */
 void merge(int arr[], int p, int q, int r)
 {
 	int n1 = q - p + 1;
@@ -40,8 +48,13 @@ void merge(int arr[], int p, int q, int r)
     	}
 }
 
-//  mrgeSort(arr, 0, size);
-
+/*
+ *	function to sort an array using merge sort algorithm
+ *	@param arr[] array need to be sorted
+ *	@param p first index
+ *	@param r last index
+ *	@return void
+ */
 void mergeSort(int arr[], int p, int r)
 {	
 	if(p < r)
