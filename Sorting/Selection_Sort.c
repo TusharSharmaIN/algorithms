@@ -1,5 +1,9 @@
-//function to implement selection sort
-//arr[] is the array passed, size is the size of array passed
+/*
+ *	function to sort an array using bubble sort algorithm
+ *	@param arr[] array passed
+ *	@param size size of array passed
+ *	@return void
+ */
 void selectionSort(int arr[], int size)
 {
 	int i, j, min_indx;
