@@ -1,9 +1,10 @@
-
-/*	use while calling in main
- *	quickSort(ptrArray, 0, size);
- *	size is size of array
+/*
+ *	function to part the sub-array with respect to the right most pivot
+ *	@param arr[] array passed
+ *	@param left left most index of sub-array passed
+ *	@param right right most index of sub-aray passed
+ *	@return i+1 index upto which partition is done
  */
-
 int partition(int arr[], int left, int right)
 {
 	int i, j;
@@ -26,6 +27,13 @@ int partition(int arr[], int left, int right)
 	return (i+1);
 }
 
+/*
+ *	function to sort an array using bubble sort algorithm
+ *	@param arr[] array passed
+ *	@param left left most index of passed array
+ *	@param right right most index of passed array
+ *	@return void
+ */
 void quickSort(int arr[], int left, int right)
 {
 	if(left < right)
